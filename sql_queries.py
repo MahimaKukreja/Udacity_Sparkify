@@ -14,7 +14,7 @@ user_table_create = ("""CREATE TABLE if not exists  users (user_id int PRIMARY K
 
 song_table_create = ("""CREATE TABLE if not exists  songs (song_id text PRIMARY KEY, title text, artist_id text NOT NULL, year int,duration numeric)""")
 
-artist_table_create = ("""CREATE TABLE if not exists  artists (artist_id text PRIMARY KEY, name text, location text, latitude numeric,\
+artist_table_create = ("""CREATE TABLE if not exists  artists (artist_id text PRIMARY KEY, name text NOT NULL, location text, latitude numeric,\
 longitude numeric)""")
 
 time_table_create = ("""CREATE TABLE if not exists  time (start_time timestamp  PRIMARY KEY, hour int, day int, week int, month int,\
